@@ -306,3 +306,104 @@ body {
 }
 .img3 {
 }
+
+
+// section degustation
+
+
+.degustation {
+	background-color: #282828;
+	color: #fff;
+	padding: 130px 0 100px;
+	// .degustation__content
+
+	&__content {
+		border: 3px solid #C4C4C4;
+		text-align: center;
+		padding-bottom: 80px;
+	}
+
+	// .degustation__title
+
+	&__title {
+		display: inline-block;
+		padding: 15px 40px;
+		background-color: #282828;
+		text-align: center;
+		margin-top: -55px;
+
+		font-family: 'Playfair Display';
+		font-weight: 700;
+		font-size: 2.25rem;
+		line-height: 150%;
+
+	}
+
+	// .degustation__line
+
+	&__line {
+		max-width: 118px;
+		margin-bottom: 40px;
+	}
+
+	// .degustation__text
+
+	&__text {
+		margin: 0 auto 80px;
+		max-width: 540px;
+		text-align: center;
+		font-size: 16px;
+		line-height: 150%;
+	}
+}
+
+.grape {
+	margin: 60px 0 -170px 11%;
+}
+.barrel {
+	margin: 65px 0 -150px 44%;
+}
+.btn-4 {
+	border: 1px solid #fff;
+	background-color: #282828;
+	color: #fff;
+	width: 100%;
+	height: 40px;
+	font-weight: 500;
+	font-size: 16px;
+	letter-spacing: 5%;
+}
+
+.form {
+	max-width: 540px;
+	margin: 0 auto;
+}
+
+.form > input {
+	margin-bottom: 50px;
+}
+
+.info {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+input {
+	display: block;
+	background-color: #282828;
+	width: 100%;
+	height: 30px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 150%;
+}
+
+.info input {
+	flex: 0 1 255px;
+}
