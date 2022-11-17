@@ -142,3 +142,167 @@ body {
 		margin-bottom: 50px;
 	}
 }
+
+
+// section news
+
+.news {
+	padding: 80px 0;
+
+	// .news__content
+
+	&__content {
+		display: grid;
+		grid-template: 1fr / repeat(2, 1fr);
+		border-top: 1px solid #998431;
+		border-bottom: 1px solid #998431;
+		padding: 50px 0;
+	}
+
+	// .news__left
+
+	&__left {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		
+	}
+
+	// .news__subtitle
+
+	&__subtitle {
+		margin: 0;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 150%;
+	}
+
+	// .news__title
+
+	&__title {
+		max-width: 300px;
+		color: #282828;
+		font-family: 'Playfair Display';
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 150%;
+
+	}
+
+	// .news__line
+
+	&__line {
+		height: 1px;
+		color: #282828;
+		width: 180px;
+		margin-left: 0;
+	}
+
+	// .news__text
+
+	&__text {
+		max-width: 445px;
+		font-size: 14px;
+		line-height: 150%;
+
+	}
+
+	// .news__right
+
+	&__right {
+		display: grid;
+		grid-template-areas: 
+		'up up'
+		'low-left low-right';
+		gap: 25px;
+
+		.img1 {
+			grid-area: up;
+			
+			img {
+				width: 100%;
+			}
+		}
+
+		.img2 {
+			grid-area: low-left;
+			img {
+				width: 100%;
+			}
+		}
+
+		.img3 {
+			grid-area: low-right;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.table {
+	display: grid;
+	grid-template: repeat(3, 1fr) / 1fr 4.5fr;
+	max-width: 445px;
+	div {
+		border: 1px solid #282828;
+		text-align: center;
+	}
+
+	div:nth-child(odd){
+		border-left: none;
+	}
+	div:first-child, div:nth-child(2) {
+		border-top: none;
+	}
+	div:nth-child(even) {
+		border-right: none;
+	}
+	div:last-child, div:nth-last-child(2) {
+		border-bottom: none;
+	}
+
+	// .table__year
+
+	&__year {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #282828;
+		font-size: 14px;
+		line-height: 150%;
+	}
+
+	// .table__body
+
+	&__body {
+	
+	}
+
+	// .table__title
+
+	&__title {
+		color: #282828;
+		font-family: 'Playfair Display';
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 150%;
+	}
+
+	// .table__text
+
+	&__text {
+		color: #282828;
+		font-size: 14px;
+		line-height: 150%;
+	}
+}
+.btn-3 {
+	
+}
+.img1 {
+}
+.img2 {
+}
+.img3 {
+}
